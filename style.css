@@ -328,7 +328,7 @@ img {
 	width: 100%;
 	font-size: 18px;
 	color: #333;
-	border: 2px solid #e6e6e6;
+	border: 2px solid transparent;
 	border-radius: 5px;
 	outline: none;
 	text-transform: uppercase;
@@ -346,6 +346,10 @@ img {
 .input--area {
 	min-height: 200px;
 	resize: none;
+}
+
+.input.form-fail {
+	border-color: #ff0000;
 }
 
 .btn {

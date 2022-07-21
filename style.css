@@ -290,7 +290,7 @@ img {
 	right: -1px;
 	width: calc(100% + 2px);
 	height: 216px;
-	background-image: url(../img/bg-top.svg);
+	background-image: url(img/bg-top.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -420,7 +420,7 @@ img {
 	right: -20px;
 	line-height: 1;
 	content: '/';
-	color: #858585;
+	color: #fff;
 }
 
 .breadcrumbs__list li,
@@ -434,7 +434,7 @@ img {
 }
 
 .breadcrumbs__list a:hover {
-	color: #f0625a;
+	color: #859bf3;
 }
 
 .about {
@@ -484,54 +484,13 @@ img {
 	width: 70px;
 	height: 70px;
 	background-color: transparent;
-	background-image: url(../img/icons/details.svg);
+	background-image: url(img/icons/details.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	border: 2px solid #fff;
 	border-radius: 35px;
 	outline: none;
 	margin: 0 auto;
-}
-
-.info {
-	position: relative;
-	z-index: 2;
-	margin-bottom: 140px;
-}
-
-.info__wrap {
-	position: relative;
-}
-
-.info__item--text {
-	width: 588px;
-}
-
-.info__item--image {
-	max-width: 685px;
-	width: 100%;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-}
-
-.info__subtitle {
-	font-size: 96px;
-	line-height: 1.46;
-	color: #000000;
-	text-transform: uppercase;
-	margin-bottom: 40px;
-	font-weight: 700;
-}
-
-.info__text {
-	margin-bottom: 82px;
-}
-
-.info__text p {
-	font-size: 20px;
-	line-height: 1.5;
-	color: #000000;
 }
 
 .services {
@@ -677,7 +636,7 @@ img {
 	right: -1px;
 	width: calc(100% + 2px);
 	height: 216px;
-	background-image: url(../img/bg-contacts.svg);
+	background-image: url(img/bg-contacts.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -878,23 +837,6 @@ img {
 
 @media screen and (max-width: 1199px) {
 
-.info {
-	margin-bottom: 100px;
-}
-
-.info__item--text {
-	width: 100%;
-}
-
-.info__item--image {
-	position: static;
-	margin: 0 auto;
-}
-
-.info__subtitle br {
-	display: none;
-}
-
 .contacts__row {
 	flex-wrap: wrap;
 	justify-content: center;
@@ -953,14 +895,6 @@ img {
 
 .about__text {
 	margin-bottom: 75px;
-}
-
-.info {
-	margin-bottom: 80px;
-}
-
-.info__subtitle {
-	font-size: 90px;
 }
 
 .services {
@@ -1123,14 +1057,6 @@ img {
 	margin-bottom: 60px;
 }
 
-.info {
-	margin-bottom: 50px;
-}
-
-.info__subtitle {
-	font-size: 68px;
-}
-
 .desc .title {
 	font-size: 34px;
 }
@@ -1163,22 +1089,6 @@ img {
 
 .single .title {
 	font-size: 30px;
-}
-
-}
-
-@media screen and (max-width: 560px) {
-
-.info__subtitle {
-	font-size: 48px;
-}
-
-}
-
-@media screen and (max-width: 400px) {
-
-.info__subtitle {
-	font-size: 36px;
 }
 
 }

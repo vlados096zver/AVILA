@@ -687,12 +687,12 @@ img {
 }
 
 .contacts__phone {
-	background-image: url(../img/icons/phone.svg);
+	background-image: url(img/icons/phone.svg);
 	margin-right: 30px;
 }
 
 .contacts__email {
-	background-image: url(../img/icons/email.svg);
+	background-image: url(img/icons/email.svg);
 }
 
 .contacts__address {

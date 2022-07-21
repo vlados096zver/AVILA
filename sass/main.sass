@@ -36,30 +36,69 @@ img
 		max-width: 1920px
 		margin: 0 auto
 
+	&--about
+		max-width: 630px
+
+	&--contacts
+		max-width: 840px
+
 .block
-	background: red
-	min-height: 600px
+	background-color: #000
 	position: relative
 	&:after
 		position: absolute
 		content: ' '
+		z-index: 2
 		bottom: -4px
 		left: -1px
 		right: -1px
 		width: calc(100% + 2px)
 		height: 216px	
-		background-image: url(../img/test.svg)
+		background-image: url(../img/bg-top.svg)
 		background-repeat: no-repeat
 		background-size: cover
 		background-position: center
+		+media(mdx)
+			height: 130px
+		+media(sm)
+			height: 90px
+
+	&--main
+		z-index: 2
+		background-image: linear-gradient(246.65deg, rgba(155, 213, 195, 0.7) -1.32%, rgba(121, 175, 212, 0.7) 102.69%)
+
+		.main-header__list
+			+media(md)
+				background-color: #68908B
+
+	&+section
+		margin-top: -125px
+		+media(mdx)
+			margin-top: -80px
+
+	&--doc
+		padding-bottom: 330px
+		+media(mdx)
+			padding-bottom: 230px
+		+media(sm)
+			padding-bottom: 190px
+
+	&--single
+		&+.doc
+			margin-top: -260px
+			+media(mdx)
+				margin-top: -140px
+			+media(sm)
+				margin-top: -110px	
 
 .title
 	font-size: 96px	
 	line-height: 1.2
 	color: #000000
 	text-transform: uppercase
+	text-align: center
 	padding-bottom: 80px
-	font-weight: 700
+	font-weight: 100
 	+media(mdx)
 		font-size: 38px
 		padding-bottom: 60px
@@ -70,12 +109,13 @@ img
 .input
 	display: block
 	width: 100%
+	font-size: 18px
+	color: #333
 	border: 2px solid #e6e6e6
 	border-radius: 5px
 	outline: none
 	text-transform: uppercase
-	padding: 13px 20px
-	padding-bottom: 14px
+	padding: 17px 20px
 	&::placeholder
 		color: #333333
 
@@ -91,47 +131,49 @@ img
 	cursor: pointer
 	font-size: 14px
 	line-height: 1.2
-	color: #fff
-	background: #000000
+	color: #000000
+	background: #fff
 	border: none
 	outline: none
 	border-radius: 25px
 	padding: 17px 32px
+	text-align: center
 	font-weight: 700
-	transition: 0.2s background
+	transition: 0.2s background, 0.2s color
 	font-family: "Roboto"
 	font-weight: 700
-	&:hover:not(.btn--inner)
-		background: #f0625a
+
 	&--inner
-		position: relative
-		+media(mdx)
-			margin: 0 auto
-		span
-			position: relative
-			z-index: 2
-		&:after
-			position: absolute
-			content: ' '
-			top: 0px
-			left: 0px
-			width: 100%
-			height: 100%
-			border-radius: 25px
-			opacity: 1
-			background: linear-gradient(94.43deg, #fb8043 -1.08%, #f0625a 48.81%, #b54dad 107.78%)
-			transition: 0.2s opacity
-		
-		&:hover:after
-			opacity: 0
+		background-color: #000
+		color: #fff
+
+	&--elem,
+	&--contacts
+		max-width: 185px
+		width: 100%
+		background-color: #859bf3
+		color: #fff
+		margin: 0 auto
+
+	&--elem
+		&:hover
+			background-color: #000
 
 	&--contacts
-		margin: 0 auto
+		&:hover
+			background-color: #fff
+			color: #000
+
+	&--header
+		&:hover
+			background: #859bf3
+			color: #fff
 		
 .breadcrumbs
 	&__list
 		display: flex	
 		flex-wrap: wrap
+		justify-content: center
 		align-items: center
 		padding-bottom: 52px
 		+media(sm)
@@ -155,8 +197,9 @@ img
 		li, a
 			font-size: 16px
 			line-height: 1.2
-			color: #858585
+			color: #fff
 			text-transform: uppercase
+			text-align: center
 			transition: 0.25s color
 
 		a

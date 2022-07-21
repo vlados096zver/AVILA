@@ -1,11 +1,20 @@
 @import 'responsive'
 
 .desc
-	margin-bottom: 100px
+	margin-bottom: 140px
 	+media(mdx)
 		margin-bottom: 60px
+	.title
+		font-size: 64px
+		+media(mdx)
+			font-size: 42px
+		+media(sm)
+			font-size: 34px	
 	&__text
-		padding-bottom: 70px
+		margin-top: 35px
+		padding-bottom: 88px
+		+media(mdx)
+			margin-top: 15px
 		p
 			font-size: 18px
 			line-height: 1.6

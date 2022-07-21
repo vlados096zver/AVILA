@@ -12,6 +12,18 @@
 
 @font-face {
     font-family: "roboto";
+    src: url("roboto-100.eot");
+    src: url("roboto-100.eot?#iefix") format("embedded-opentype"),
+    url("roboto-100.woff") format("woff"),
+    url("roboto-100.woff2") format("woff2"),
+    url("roboto-100.ttf") format("truetype"),
+    url('roboto-100.svg') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
     src: url("roboto-200.eot");
     src: url("roboto-200.eot?#iefix") format("embedded-opentype"),
     url("roboto-200.woff") format("woff"),
@@ -21,7 +33,6 @@
     font-weight: 200;
     font-style: normal;
 }
-
 
 
 @font-face {

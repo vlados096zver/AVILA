@@ -26,9 +26,15 @@
      return false;
    })
 
-   $(document).on('click', '.main-header .btn, .info .btn', function() {
+   $(document).on('click', '.main-header .btn', function() {
      $('html, body').animate({
        scrollTop: $('.contacts').offset().top
+     }, 800);
+   })
+
+   $(document).on('click', '.about__btn', function() {
+     $('html, body').animate({
+       scrollTop: $('.services').offset().top
      }, 800);
    })
 
